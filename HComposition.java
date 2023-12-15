@@ -3,7 +3,7 @@ import java.util.List;
 
 /**
  * The horizontal composition of two text blocks.
- * 
+ *
  * @author Samuel A. Rebelsky (modified by Audrey Trinh)
  * @version 1.3 of February 2019
  */
@@ -40,9 +40,9 @@ public class HComposition implements TextBlock {
 
   /**
    * Get one row from the block.
-   * 
+   *
+   * @throws Exception if the precondition is not met
    * @pre 0 <= i < this.height()
-   * @exception Exception if the precondition is not met
    */
   public String row(int i) throws Exception {
     int lh = this.left.height();

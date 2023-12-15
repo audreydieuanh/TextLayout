@@ -7,28 +7,28 @@ import java.util.List;
  * @version 1.2 of February 2019
  */
 public interface TextBlock {
-    // +---------+-----------------------------------------------------------
-    // | Methods |
-    // +---------+
+  // +---------+-----------------------------------------------------------
+  // | Methods |
+  // +---------+
 
-    /**
-     * Get one row from the block.
-     *
-     * @pre i < this.height()
-     * @exception Exception if the row number is invalid.
-     */
-    String row(int i) throws Exception;
+  /**
+   * Get one row from the block.
+   *
+   * @throws Exception if the row number is invalid.
+   * @pre i < this.height()
+   */
+  String row(int i) throws Exception;
 
-    /**
-     * Determine how many rows are in the block.
-     */
-    int height();
+  /**
+   * Determine how many rows are in the block.
+   */
+  int height();
 
-    /**
-     * Determine how many columns are in the block.
-     */
-    int width();
+  /**
+   * Determine how many columns are in the block.
+   */
+  int width();
 
-    List<TextBlock> getChild();
+  List<TextBlock> getChild();
 
 } // interface TextBlock
